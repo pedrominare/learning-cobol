@@ -1,0 +1,16 @@
+       IDENTIFICATION DIVISION.
+       PROGRAM-ID. DecimalSeparatorExample.
+
+       ENVIRONMENT DIVISION.
+       CONFIGURATION SECTION.
+       SPECIAL-NAMES.
+           DECIMAL-POINT IS COMMA.
+
+       DATA DIVISION.
+       WORKING-STORAGE SECTION.
+       01 NUMERO PIC 9V99 VALUE 0,25.
+
+       PROCEDURE DIVISION.
+           DISPLAY "O número é: " NUMERO.
+           STOP RUN.
+
